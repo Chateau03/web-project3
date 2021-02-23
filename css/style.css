@@ -23,8 +23,9 @@ body {
 }
 /*------------------------- Globales ---------------------------*/
 .contenedor {
-  max-width: 120rem;
-  width: 90%;
+  /* max-width: 120rem;
+    width: 90%; /* Hace que el contenido no se pegue a las orillas */
+  width: min(90%, 120rem); /* Nueva sintaxis */
   margin: 0 auto;
 }
 a {
@@ -78,6 +79,9 @@ img {
   .header__texto {
     margin-top: 15rem;
   }
+}
+.barra {
+  padding-top: 4rem;
 }
 @media (min-width: 768px) {
   .barra {
@@ -171,4 +175,10 @@ img {
 .widget-curso__label,
 .widget-curso__info {
   font-size: 2rem;
+}
+
+.footer {
+  background-color: var(--negro);
+  padding-bottom: 3rem;
+  margin-top: 2rem; /* de aqui en adelante no lo hice*/
 }
